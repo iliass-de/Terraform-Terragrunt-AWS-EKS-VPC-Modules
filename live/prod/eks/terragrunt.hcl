@@ -1,5 +1,5 @@
 terraform {
-  # Deploy version v0.0.3 in stage
+  # Deploy stage
   source = "git::https://github.com/iliassh1/terragnut.git//modules/eks"
 }
 
@@ -19,6 +19,8 @@ inputs = {
  instance_type                    = "t2.small"
  launch_configuration_prefix_name = "terraform_config"
  autoscaling_group_name           = "terraform_auto_scaling"
+ security_group_nodes_name        = "terraform_nodes"
+ security_group_workers_name      = "terraform_workers"
 }
 
 

@@ -19,5 +19,14 @@ variable "autoscaling_group_name" {
   type        = string
 }
 
+variable "security_group_nodes_name" {
+  description = "security_group_nodes_name"
+  type        = string
+}
+
+variable "security_group_workers_name" {
+  description = "security_group_workers_name"
+  type        = string
+}
 
 
