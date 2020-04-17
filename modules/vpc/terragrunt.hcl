@@ -1,7 +1,3 @@
-terraform {
-  # Deploy version v0.0.3 in stage
-  source = "git::https://github.com/iliassh1/terragnut.git//modules"
-}
 
 
 
