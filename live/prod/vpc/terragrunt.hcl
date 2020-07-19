@@ -8,7 +8,7 @@ remote_state {
   backend = "s3"
   config = {
     bucket         = "csa-bucket-project"
-    key            = "terraform/teclead-state"
+    key            = "terraform/vpc.state"
     region         = "us-east-1"
   }
 }

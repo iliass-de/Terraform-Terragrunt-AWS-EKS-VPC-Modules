@@ -8,14 +8,14 @@ remote_state {
   backend = "s3"
   config = {
     bucket         = "csa-bucket-project"
-    key            = "terraform/teclead-state"
+    key            = "terraform/eks.state"
     region         = "us-east-1"
   }
 }
 
 #EKS inputs
 inputs = {
- cluster_name                     = "eks-teclead"
+ cluster_name                     = "eks-demo"
  instance_type                    = "t2.small"
  launch_configuration_prefix_name = "terraform_config"
  autoscaling_group_name           = "terraform_auto_scaling"
